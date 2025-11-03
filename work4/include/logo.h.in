@@ -1,0 +1,6 @@
+#ifndef __LOGO_H__
+#define __LOGO_H__
+
+#define logo "@LOGO_CONTENT@"
+
+#endif//__LOGO_H_

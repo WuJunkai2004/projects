@@ -1,13 +1,13 @@
-# Wu Junkai's Project
+# linux 实践作业
 
-This is Wu Junkai's small project collection repository. 
+本仓库包含了 Linux 实践作业的相关资料和代码示例。
 
-For specific content, please visit [hear](https://github.com/WuJunkai2004/projects/blob/Notes/README.md).
+## 目录结构
+work1 - 作业1 进程管理
+work2 - 作业2 进程通信
+work3 - 作业3 网络编程
+work4 - 作业4 综合作业
 
-For origin branch, please visit [master](https://github.com/WuJunkai2004/projects/tree/master).
-
-This main branch is blank and is used as a basis for creating other branches. 
-
-You should never switch branches of this project directly using `switch` and `branch`, but should decide when cloning.
- 
-All small projects use the MIT license.
+## 关于综合作业
+请见 https://www.github.com/WuJunkai2004/cmini
+是一个仿gemini cli的项目。
