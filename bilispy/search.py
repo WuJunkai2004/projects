@@ -99,10 +99,3 @@ class search:
             self.driver.quit()
         except Exception:
             pass
-
-if __name__ == "__main__":
-    s = search(keyword="大模型", keep_open=False)
-    s.start()
-    s.next_page()
-    s.next_page()
-    s.stop()
