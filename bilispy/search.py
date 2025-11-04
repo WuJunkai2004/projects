@@ -5,6 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
 from typing import Generator
+import time
 
 
 def finished(message: str):
@@ -78,6 +79,7 @@ class search:
 
     def query(self) -> Generator[str, None, None]:
         self.start()
+        time.sleep(5)  # 等待页面稳定
         video_list = self.driver.find_element(By.XPATH, "//div[contains(@class, 'video-list')]") # 页面上只有一个包含视频标题的元素，所以使用 find_element
         video_cards = video_list.find_elements(By.CLASS_NAME, "bili-video-card")  # 获取所有视频卡片元素
         print(f"在搜索结果中找到 {len(video_cards)} 个视频:")

@@ -47,5 +47,9 @@ class barrage:
         if self.cached:
             return self.cached
         for content in self.barrages:
-            self.cached.append(content['#text'])
+            try:
+                self.cached.append(content['#text'])
+            except:
+                print(f"弹幕解析出错: {content}; 类型: {type(content)}")
+                continue
         return self.cached
