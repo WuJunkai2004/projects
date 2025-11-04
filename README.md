@@ -1,13 +1,23 @@
-# Wu Junkai's Project
+# Bili Spy
 
-This is Wu Junkai's small project collection repository. 
+在bilibili上，通过关键词检索视频，抓取弹幕并保存。
 
-For specific content, please visit [hear](https://github.com/WuJunkai2004/projects/blob/Notes/README.md).
+## 安装
 
-For origin branch, please visit [master](https://github.com/WuJunkai2004/projects/tree/master).
+```bash
+pip install -r requirements.txt
+```
 
-This main branch is blank and is used as a basis for creating other branches. 
+## 使用方法
 
-You should never switch branches of this project directly using `switch` and `branch`, but should decide when cloning.
- 
-All small projects use the MIT license.
+```bash
+python -m biliSpy --help
+```
+
+## 依赖
+- selenium
+- requests
+- tomli
+
+## 许可证
+本项目采用MIT许可证，详情请参阅LICENSE文件。

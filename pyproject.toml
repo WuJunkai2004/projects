@@ -1,0 +1,8 @@
+[project]
+name = "biliSpy"
+version = "0.1.0"
+dependencies = [
+    "selenium",
+    "requests",
+    "tomli"
+]
