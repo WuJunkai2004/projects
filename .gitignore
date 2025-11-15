@@ -1,3 +1,9 @@
 #python cache
 __pycache__/
 *.py[cod]
+
+*.json
+*.json[lc5]
+
+# picture
+*.png

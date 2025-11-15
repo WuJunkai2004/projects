@@ -4,5 +4,10 @@ version = "0.1.0"
 dependencies = [
     "selenium",
     "requests",
-    "tomli"
+    "tomli",
+    "jieba",
+    "numpy",
+    "matplotlib",
+    "wordcloud",
+    "Pillow"
 ]

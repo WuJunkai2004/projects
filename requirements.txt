@@ -1,3 +1,8 @@
 selenium
 requests
 tomli
+jieba
+numpy
+matplotlib
+wordcloud
+Pillow

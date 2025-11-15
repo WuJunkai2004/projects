@@ -10,16 +10,17 @@ import time
 
 
 def ensure_json_suffix(path: str) -> str:
-    if not path.lower().endswith('.json'):
-        return path + '.json'
+    if not path.lower().endswith('.jsonl'):
+        return path + '.jsonl'
     return path
 
 
 def main():
     parser = argparse.ArgumentParser(description='从 B 站搜索结果抓取弹幕并保存到文件')
+    parser.prog = "python -m bilispy"
     parser.add_argument('keyword', help='搜索关键词（必需）')
     parser.add_argument('-n', '--number', type=int, default=360, help='最多处理的视频数量（默认: 360）')
-    parser.add_argument('-o', '--output', default='barrage.json', help='输出文件路径（默认: barrage.json），如果没有 .json 后缀则自动补上')
+    parser.add_argument('-o', '--output', default='barrage.jsonl', help='输出文件路径（默认: barrage.jsonl），如果没有 .jsonl 后缀则自动补上')
     parser.add_argument('-k', '--keep-open', action='store_true', help='运行结束后保持浏览器窗口打开（用于调试）')
     parser.add_argument('--min-wait', type=float, default=6.0, help='每个视频之间随机等待的最小秒数（默认 6）')
     parser.add_argument('--max-wait', type=float, default=12.0, help='每个视频之间随机等待的最大秒数（默认 12）')
